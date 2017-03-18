@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    font-weight: 600;
+}
+nav#topmenu{
+    text-align:center;
+    list-style: none;
+}
+body{
+    font-family: Cinzel;
+}
+body div{
+    margin:10px;
+
+}
+header{
+    background: url(img/super-backgr.jpg) no-repeat;
+    background-size: 1300px 400px;
+    background-position: center center;
+    text-align: center;
+    height: 300px;
+    font-family: Cinzel;
+}
+header > p{
+    position: relative;
+    top:-20px;
+    font-size:16px;
+    color:#800000;
+}
+header > h1{
+    color:#ffffff;
+    text-shadow: 2px 2px #0066ff;
+    padding-bottom: 20px;
+}
+nav#topmenu li{
+    display: inline-block;
+    padding: 0 60px 20px 30px;
+    font-size: 24px;
+}
+nav#topmenu a{
+    text-decoration: none;
+    color:#ffffff;
+    text-shadow: 2px 2px #3333ff;
+
+}
+body >footer{
+    color: #800000;
+    background: #ff9933;
+    height: 80px;
+ position:relative;
+    justify-content: center;
+  }
