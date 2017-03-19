@@ -6,17 +6,12 @@
 body{
     font-size: 14px;
     font-weight: 600;
+    font-family: Cinzel;
+    position: relative;
 }
 nav#topmenu{
     text-align:center;
     list-style: none;
-}
-body{
-    font-family: Cinzel;
-}
-body div{
-    margin:10px;
-
 }
 header{
     background: url(img/super-backgr.jpg) no-repeat;
@@ -48,10 +43,56 @@ nav#topmenu a{
     text-shadow: 2px 2px #3333ff;
 
 }
+#story-container{
+    text-align: center;
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+aside{
+    position: relative;
+    float: right;
+    bottom:100px;
+}
+aside > img{
+    max-width: 100%;
+    z-index: 1;
+}
+
+.story-part{
+    margin: 10em;
+    padding-bottom:100px ;
+    box-sizing: border-box;
+}
+.story-part>p{
+    position: relative;
+    left: 5em;
+}
+#progr-basics,#tech-module,#JS-core,#web-basics,#mean-stack{
+    display: none;
+}
+
+.story-part::after{
+    position: absolute;
+    content: "";
+    left:-150px;
+    display: block;
+    width: 800px;
+    border: 10px solid transparent;
+    border-image-source: url(img/super-backgr.jpg);
+    border-image-repeat: repeat;
+    border-image-slice: 30;
+    z-index: -1;
+}
 body >footer{
     color: #800000;
     background: #ff9933;
     height: 80px;
- position:relative;
-    justify-content: center;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
   }
