@@ -15,11 +15,9 @@ nav#topmenu{
     text-align:center;
     list-style: none;
     background: #ffc34d;
-    background-blend-mode:lighten;
     position: fixed;
     width: 100%;
     z-index: 1;
-
 }
 header{
     text-align: center;
@@ -51,7 +49,7 @@ header > h1{
 }
 nav#topmenu li{
     display: inline-block;
-    padding: 10px 60px 20px 30px;
+    padding: 10px 60px 20px 60px;
     font-size: 24px;
 }
 nav#topmenu a{
@@ -62,8 +60,69 @@ nav#topmenu a{
 li:hover{
     background: #ff9933;
 }
-#our-lead{
-    height: 100%;
+.about-us > h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 50px 40px 0 20px;
+    border: 5px solid #fff;
+    border-radius: 135px;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    position: relative;
+}
+.container img#first{
+    position: absolute;
+    top: -20px;
+    left: -100px;
+    cursor: pointer;
+}
+.container img#third{
+    position: absolute;
+    width:300px;
+    left: -30px;
+    top:50px;
+    cursor: pointer;
+}
+.container img#second{
+    position: absolute;
+    width:400px;
+    top:-80px;
+    left: -70px;
+    cursor: pointer;
+}
+.box > p {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    background:  #ebebe0;
+}
+.container > a{
+    text-decoration: none;
+    outline: 0;
+    color: #000000;
+}
+.box > p:hover {
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.about-us > .container{
+    position: relative;
+    height: 396px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 #wrapper{
@@ -75,7 +134,14 @@ li:hover{
     box-shadow: 10px 10px 5px grey;
     display: flex;
     transition: transform 0.5s linear;
+    -webkit-transition: transform 0.5s linear;
+    -moz-transition: transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
 }
+#wrapper > img{
+    width:100%;
+}
+
 #wrapper:hover{
     transform: scale(1,1.2);
 }
@@ -84,7 +150,7 @@ li:hover{
     background: none;
     border: 5px solid black;
     border-radius: 15px;
-    padding: 15px 45px;
+    padding: 10px 30px;
     font-size: 16px;
     font-family: Cinzel;
     font-weight: bold;
@@ -94,8 +160,13 @@ li:hover{
     text-decoration: none;
     color:black;
 }
-a:visited{
 
+#menu-icon {
+    float: right;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: #4C8FEC url(img/menu-icon.png) center;
 }
 #wrapper .heading {
     font-size:30px;
@@ -130,6 +201,9 @@ a:visited{
     position: relative;
     left: 3em;
     transition: transform 0.5s linear;
+    -webkit-transition: transform 0.5s linear;
+    -moz-transition: transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
     padding-bottom: 50px;
 }
 .story-part>p::first-letter{
@@ -184,6 +258,149 @@ body >footer{
     position: absolute;
     padding: 0;
   }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 1024px){
+    #wrapper {
+        font-size: 1em;
+        margin: 50px;
+        height: 27em;
+    }
+}
+    @media screen and (max-width: 1023px) {
+    #top-list {
+        display: none;
+        height: auto;
+    }
+        .about-us > .container {
+            display: block;
+            height: 70em;
+            padding-left: 20em;
+        }
+    #menu-icon {
+        display: inline-block;
+    }
+    header > h1{
+        font-size: 3em;
+    }
+    header >p {
+        position: relative;
+        top:7em;
+        right: 10em;
+    }
+    nav#topmenu li{
+        text-align: center;
+        width: 100%;
+    }
+    nav ul{
+      margin-left: 0;
+        padding-left: 0;
+    }
+    nav:hover #top-list{
+        display: block;
+    }
+    .story-part>img {
+     width: 50%;
+        top:2em;
+        left: -1.2em;
+    }
+    #wrapper {
+        font-size: 0.9em;
+        margin-right: 0;
+        height: 35em;
+    }
+    #wrapper:hover{
+        transform: scale(1,1.1);
+        -ms-transform: scale(1,1.1);
+        -webkit-transform: scale(1,1.1); 
+        transform: rotate(7deg);
+    }
+    #wrapper >img {
+       height: auto;
+        width: 20em;
+    }
 
+    #story-container {
+      margin: 0;
+        padding: 0;
+        font-size: 0.7em;
+        right: 1.2em;
+    }
+    .story-part::after{
+        left:10em;
+        top:30em;
+        width: 80%;}
+    footer{
+        height: 20em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header > h1{
+        font-size: 1.3em;
+        padding-top: 100px;
+        word-wrap: break-word;
+    }
+    .about-us > .container {
+        display: block;
+        height: 70em;
+        padding-left: 40px;
+    }
+
+    header >p {
+        font-size: 0.5em;
+        top:7em;
+        right: 10em;
+    }
+    nav#topmenu li{
+        padding: 0.2em;
+        font-size: 1.5em;
+    }
+    nav#topmenu ul {
+        margin-bottom:0.5em;
+        height: 10em;
+    }
+    #wrapper {
+        font-size: 0.9em;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        padding-top: 0;
+        height: 40em;
+    }
+
+    #wrapper >img {
+        height: auto;
+        width: 10em;
+    }
+    #story-container {
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+        right: 8em;
+        line-height: 2em;
+    }
+
+    .bttn{
+        padding: 4px 15px;
+        font-size: 0.8em;
+        border-width: 0.6em;
+    }
+    .story-part > p{
+
+        height: 30em;
+    }
+    .story-part::after {
+        display: none;
+    }
+
+    .story-part::before {
+        width: 100%;
+    }
+    .story-part>img {
+     float: none;
+        padding-bottom: 40px;
+        left:20px;
+    }
+    header#index{
+        height: 360px;
+    }
 }
