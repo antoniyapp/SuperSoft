@@ -376,7 +376,6 @@ body >footer{
         font-size: 0.8em;
         right: 8em;
         line-height: 2em;
-        height: 110em;
     }
 
     .bttn{
@@ -403,6 +402,10 @@ body >footer{
     .box{
         width: 13em;
         height: 13em;
+    }
+    .box > p {
+        position: absolute;
+        top: 60px;
     }
     .container img#first{
         top: -10px;
