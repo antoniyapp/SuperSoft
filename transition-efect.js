@@ -4,6 +4,6 @@ $(document).ready(function () {
         linkLocation=this.getAttribute('title');
         $(this).css('display','none');
         $(linkLocation).css('display','block');
-        
+
     })
 })

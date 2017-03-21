@@ -376,6 +376,7 @@ body >footer{
         font-size: 0.8em;
         right: 8em;
         line-height: 2em;
+        height: 110em;
     }
 
     .bttn{
@@ -398,6 +399,21 @@ body >footer{
      float: none;
         padding-bottom: 40px;
         left:20px;
+    }
+    .box{
+        width: 13em;
+        height: 13em;
+    }
+    .container img#first{
+        top: -10px;
+        left: -125px;
+    }
+    .container img#third {
+        left: -60px;
+    }
+    .container img#second{
+        top:-120px;
+        left: -100px;
     }
     header#index{
         height: 360px;
